@@ -28,7 +28,7 @@ To build a recommendation system based on user history and developing API and UI
 
 It's important to note that these recommenders have different approaches:
 
-     - The Popularity-based recommender recommends popular items for all users, regardless of their preferences.
-     - The Item Similarity-based recommender finds items that are similar to the ones a user has interacted with, personalized to that user's behavior.
+   - The Popularity-based recommender recommends popular items for all users, regardless of their preferences.
+   - The Item Similarity-based recommender finds items that are similar to the ones a user has interacted with, personalized to that user's behavior.
 
 
