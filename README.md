@@ -30,5 +30,7 @@ It's important to note that these recommenders have different approaches:
    - The Popularity-based recommender recommends popular items for all users, regardless of their preferences.
    - The Item Similarity-based recommender finds items that are similar to the ones a user has interacted with, personalized to that user's behavior.
 
-- api.py: 
+- api.py: Creates a FastAPI web application that offers an item-based recommender system. It uses the `item_similarity_recommender_py` class from the `Recommenders` module to generate personalized item recommendations based on item (song) similarity. The recommender system reads and preprocesses data from two CSV files, merges them, and then creates a recommender instance. It generates top recommendations for a specific user and offers item similarity-based recommendations for user input via the `/item_based` endpoint.
+
+- ui.py: A Streamlit web application for a song recommender system. It allows the user to enter a song name, and upon clicking the "Recommend" button, it sends a request to a local API (running on 'http://127.0.0.1:8000/item_based') to get song recommendations based on item (song) similarity. The API should provide the recommendations in response to the request. The recommended songs are then displayed on the Streamlit app.
 
